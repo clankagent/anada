@@ -1,0 +1,17 @@
+/work/
+/target/
+/dist/
+/artifacts/
+/.env
+/.env.*
+!/.env.example
+*.log
+*.dmp
+*.pfx
+*.p12
+*.key
+/config.local.json
+/diagnostics/
+# Maintainer-only material, never published
+/private/
+/AGENTS.local.md

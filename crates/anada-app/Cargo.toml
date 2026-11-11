@@ -1,0 +1,34 @@
+[package]
+name = "anada-app"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+license.workspace = true
+default-run = "anada"
+
+[lib]
+name = "anada_app"
+
+[[bin]]
+name = "anada"
+path = "src/main.rs"
+
+[[bin]]
+name = "anada-host"
+path = "src/bin/host.rs"
+
+[dependencies]
+anada-dsp = { path = "../anada-dsp" }
+anada-windows = { path = "../anada-windows" }
+cpal = "=0.18.2"
+rtrb = "=0.3.2"
+rubato = { version = "=0.16.2", default-features = false }
+eframe = { version = "0.37.0", default-features = false, features = ["default_fonts", "wgpu", "accesskit", "clipboard"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+image = { version = "=0.25.10", default-features = false, features = ["png"] }
+windows = { version = "0.62.2", features = ["Win32_Foundation", "Win32_Security", "Win32_Security_Cryptography", "Win32_Security_Authorization", "Win32_System_Threading", "Win32_System_Pipes", "Win32_Storage_FileSystem", "Win32_System_IO", "Win32_System_Memory", "Win32_System_LibraryLoader", "Win32_System_Registry", "Win32_UI_Shell", "Win32_UI_WindowsAndMessaging", "Win32_Graphics_Gdi"] }
+rustfft = "=6.4.1"
+
+[build-dependencies]
+winresource = "0.1.34"

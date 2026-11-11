@@ -1,0 +1,21 @@
+pub mod applications;
+pub mod audio;
+pub mod controller;
+pub mod model;
+pub mod presets;
+pub mod quiet_start;
+mod spectrum;
+pub mod startup;
+pub mod storage;
+pub mod transport;
+pub mod tray;
+pub mod ui;
+pub mod ui_client;
+pub mod ui_eq;
+mod ui_numeric;
+mod ui_spectrum;
+
+pub mod mcp_session;
+pub mod mcp_stdio;
+pub mod mcp_tools;
+pub mod mcp_types;

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="c0" gradientUnits="userSpaceOnUse" x1="26" y1="0" x2="41" y2="0"><stop offset="0" stop-color="#56b8c6"/><stop offset="1" stop-color="#e8eaea"/></linearGradient>
+    <linearGradient id="c1" gradientUnits="userSpaceOnUse" x1="26" y1="0" x2="41" y2="0"><stop offset="0" stop-color="#6cc38a"/><stop offset="1" stop-color="#e8eaea"/></linearGradient>
+    <linearGradient id="c2" gradientUnits="userSpaceOnUse" x1="26" y1="0" x2="41" y2="0"><stop offset="0" stop-color="#d3a870"/><stop offset="1" stop-color="#e8eaea"/></linearGradient>
+    <linearGradient id="c3" gradientUnits="userSpaceOnUse" x1="26" y1="0" x2="41" y2="0"><stop offset="0" stop-color="#ae9cd4"/><stop offset="1" stop-color="#e8eaea"/></linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#1d2022"/>
+  <g fill="none" stroke-width="4" stroke-linecap="round">
+    <path d="M13 15C30 15 27 32 43 32" stroke="url(#c0)"/>
+    <path d="M13 49C30 49 27 32 43 32" stroke="url(#c3)"/>
+    <path d="M13 26.3C26 26.3 28 32 43 32" stroke="url(#c1)"/>
+    <path d="M13 37.7C26 37.7 28 32 43 32" stroke="url(#c2)"/>
+  </g>
+  <circle cx="46.5" cy="32" r="7" fill="#e8eaea"/>
+</svg>

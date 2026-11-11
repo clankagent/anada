@@ -1,0 +1,14 @@
+Anada includes third-party software and fonts.
+
+This folder preserves their copyright and license notices. manifest.json identifies
+the pinned source packages, their declared licenses, notice paths and upstream URLs.
+The manifest conservatively includes dependencies for other platforms and build/test
+tools as well as libraries used by the Windows binaries. Inclusion in the manifest
+does not mean that every listed package is present in the installed executable.
+
+crates/ contains library and bundled-font notices. rust/ contains the Rust standard
+library notices. rust-gnu-runtime/ and mingw/ preserve GNU runtime exception and
+MinGW notices. No third-party license grants rights to Anada's own source code.
+
+Virtual Audio Cable is separate software licensed by its vendor. Its unchanged
+optional trial archive contains its own license and installation documentation.

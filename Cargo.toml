@@ -1,0 +1,28 @@
+[workspace]
+members = ["crates/anada-dsp", "crates/anada-windows", "crates/anada-app"]
+resolver = "2"
+
+[workspace.package]
+version = "1.1.0"
+edition = "2024"
+publish = false
+license = "GPL-3.0-or-later"
+repository = "https://github.com/clankagent/anada"
+
+[profile.dev]
+debug = 0
+incremental = false
+
+# Real-time DSP must retain release-like code generation in development builds.
+[profile.dev.package.rubato]
+opt-level = 3
+
+[profile.dev.package.anada-dsp]
+opt-level = 3
+
+[profile.dev.package.anada-app]
+opt-level = 2
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

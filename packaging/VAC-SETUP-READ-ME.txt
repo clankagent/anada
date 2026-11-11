@@ -1,0 +1,29 @@
+ANADA: AUTOMATIC VAC SETUP
+
+This replaces the manual VAC control-panel steps from the first Anada bundle.
+Keep the Anada installer you already received.
+
+1. Install your licensed VAC Full package normally. The official trial also works.
+2. Extract this whole ZIP to a folder. Keep its three script files together.
+3. Close audio applications, Anada (including Exit host), and the VAC control panel.
+4. Double-click Configure-VAC.cmd. Approve the Windows administrator prompt if asked.
+5. Wait for the success message, then open Anada. Choose your headphones/speakers,
+   click Bind standard VAC Lines 1-4, Save changes, then Make Anada default.
+
+The helper creates at least four cables, makes cables 1-4 stereo, enables their
+Windows volume control, and restarts only the VAC driver. It preserves extra cables.
+It verifies one playback and one recording endpoint for each standard Line 1-4.
+If the settings already match, no elevation, write or restart is needed.
+You do not need to open VAC Control Panel or type PowerShell commands.
+
+If another program already uses VAC cables 1-4, preserve that setup instead of
+running this helper over it. Renamed cable endpoints need separate checking.
+
+The helper saves previous changed values under C:\ProgramData\Anada\VACSetup.
+Double-click Restore-VAC.cmd to restore its latest backup. Close audio programs first.
+The scripts do not install/remove VAC, purchase/activate a license, or reboot Windows.
+Windows itself can change audio defaults during driver restart; check your real output
+in Windows Sound until Anada is ready. If a restart is requested, do it when convenient.
+
+Official configuration documentation:
+https://vac.muzychenko.net/en/manual/configure.htm
